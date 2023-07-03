@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="gang affiliated activities" property="og:description">
-        <meta content="cyberpunk.gay" property="og:title">
-        <meta content="#6b1e5a" data-react-helmet="true" name="theme-color">
-        <title>cyberPunk</title>
-    </head>
-    <body>
-        <h1>updating</h1>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="get good, get Dynamic" property="og:description">
+    <meta content="discord: gang_shit" property="og:title">
+    <meta content="#6b1e5a" data-react-helmet="true" name="theme-color">
+    <title>Dynamic Tools</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            background-color: black;
+        }
+        h1 {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        h3 {
+            color: white;
+        }
+        h4 {
+            color: white;
+        }
+        button {
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            height: 35px;
+            outline: 0;
+            padding: 0 30px;
+        }
+        dialog {
+            color: white;
+            border-radius: 15px;
+            opacity: 0;
+            scale: 0;
+            display: block;
+            transition: all 0.5s;
+        }
+        dialog[open] {
+            opacity: 1;
+            scale: 1;
+        }
+        p {
+            color: white;
+        }
+        hr {
+            margin: 5%;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            padding: 10px 0;
+            margin-top: auto;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .title {
+            padding-top: 5%;
+            margin-top: auto;
+        }
+        .blog {
+            margin: auto;
+            width: 500px;
+            border: 3px solid white;
+            border-radius: 15px;
+            padding-top: 25px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Dynamic Tools</h1>
+    <dialog id="popup">
+        <h2>Accepted Payment Methods</h2>
+        <h3>CashApp</h3>
+        <h3>Litecoin</h3>
+        <a href="https://discord.gg/wPrmtTPCPY", target="_blank">
+            <button>Discord</button>
+        </a>
+        <button onclick="popup.close()">Close</button>
+    </dialog>
+    <button onclick="popup.showModal()">Purchase</button>
+    <hr>
+    <h2>Blog</h2>
+    <div class="blog">
+        <h3>Welcome to the new website!</h3>
+        <h4>Author: cyberPunk</h4>
+        <p>Welcome to the new cyberpunk.gay!</p>
+        <p>Make sure to check out Dynamic Tools for cool Discord tools and more.</p>
+    </div>
+    <footer>discord: gang_shit</footer>
+</body>
 </html>
